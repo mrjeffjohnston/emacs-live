@@ -1,5 +1,6 @@
+;;Jeff pack
 
-(defun jeff-full-screen-toggle ()
-  "toggle full-screen mode"
-  (interactive)
-  (shell-command "wmctrl -r :ACTIVE: -btoggle,fullscreen"))
+(if (not user-full-name) (setq user-full-name "Jeff Johnston"))
+
+(live-load-config-file "full-screen.el")
+(live-load-config-file "key-bindings.el")
